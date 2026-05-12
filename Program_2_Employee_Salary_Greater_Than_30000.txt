@@ -1,0 +1,14 @@
+CREATE TABLE Employee(
+    EmpID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Department VARCHAR(50),
+    Salary INT
+);
+
+INSERT INTO Employee VALUES
+(1,'Raj','HR',25000),
+(2,'Aman','IT',45000),
+(3,'Neha','Sales',35000);
+
+SELECT * FROM Employee
+WHERE Salary > 30000;

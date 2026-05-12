@@ -1,0 +1,19 @@
+CREATE TABLE Student(
+    RollNo INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Marks INT
+);
+
+INSERT INTO Student VALUES
+(1,'Rahul',75),
+(2,'Amit',30),
+(3,'Sneha',65);
+
+SELECT
+CASE
+    WHEN Marks >= 40 THEN 'Pass'
+    ELSE 'Fail'
+END AS Result,
+COUNT(*) AS Total_Students
+FROM Student
+GROUP BY Result;

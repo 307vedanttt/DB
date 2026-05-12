@@ -1,0 +1,13 @@
+CREATE TABLE Sales(
+    SaleID INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    Amount INT
+);
+
+INSERT INTO Sales VALUES
+(1,'Laptop',50000),
+(2,'Mouse',1000),
+(3,'Keyboard',2000);
+
+SELECT SUM(Amount) AS Total_Sales
+FROM Sales;

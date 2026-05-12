@@ -1,0 +1,14 @@
+CREATE TABLE Student(
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT
+);
+
+INSERT INTO Student VALUES
+(1,'Rahul',20),
+(2,'Amit',21);
+
+CREATE VIEW Student_View AS
+SELECT * FROM Student;
+
+SELECT * FROM Student_View;

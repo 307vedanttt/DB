@@ -1,0 +1,16 @@
+CREATE OR REPLACE FUNCTION GreaterNum(a NUMBER,b NUMBER)
+RETURN NUMBER
+IS
+BEGIN
+    IF a>b THEN
+        RETURN a;
+    ELSE
+        RETURN b;
+    END IF;
+END;
+/
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(GreaterNum(10,20));
+END;
+/

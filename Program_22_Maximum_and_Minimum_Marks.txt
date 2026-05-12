@@ -1,0 +1,14 @@
+CREATE TABLE Student(
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Marks INT
+);
+
+INSERT INTO Student VALUES
+(1,'Rahul',85),
+(2,'Amit',60),
+(3,'Sneha',95);
+
+SELECT MAX(Marks) AS Maximum_Marks,
+MIN(Marks) AS Minimum_Marks
+FROM Student;

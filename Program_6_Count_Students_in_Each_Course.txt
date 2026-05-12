@@ -1,0 +1,23 @@
+CREATE TABLE Course_Details(
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(50)
+);
+
+CREATE TABLE Student(
+    Name VARCHAR(50),
+    CourseID INT,
+    FOREIGN KEY (CourseID) REFERENCES Course_Details(CourseID)
+);
+
+INSERT INTO Course_Details VALUES
+(1,'CSE'),
+(2,'IT');
+
+INSERT INTO Student VALUES
+('Rahul',1),
+('Amit',1),
+('Sneha',2);
+
+SELECT CourseID, COUNT(*) AS Total_Students
+FROM Student
+GROUP BY CourseID;

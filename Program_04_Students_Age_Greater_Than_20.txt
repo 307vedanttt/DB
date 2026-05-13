@@ -1,13 +1,5 @@
-CREATE TABLE Student(
-    StudentID INT PRIMARY KEY,
-    Name VARCHAR(50),
-    Age INT
-);
+CREATE TABLE Student(  StudentID INT PRIMARY KEY, Name VARCHAR(50), Age INT);
 
-INSERT INTO Student VALUES
-(1,'Rohit',19),
-(2,'Priya',22),
-(3,'Karan',21);
+INSERT INTO Student VALUES(1,'Rohit',19),(2,'Priya',22),(3,'Karan',21);
 
-SELECT * FROM Student
-WHERE Age > 20;
+SELECT * FROM Student WHERE Age > 20;

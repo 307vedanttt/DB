@@ -1,13 +1,5 @@
-CREATE TABLE Course(
-    CourseID INT PRIMARY KEY,
-    CourseName VARCHAR(50),
-    Credits INT
-);
+CREATE TABLE Course(CourseID INT PRIMARY KEY,CourseName VARCHAR(50),Credits INT);
 
-INSERT INTO Course VALUES
-(1,'DBMS',4),
-(2,'Java',3),
-(3,'Python',5);
+INSERT INTO Course VALUES(1,'DBMS',4),(2,'Java',3),(3,'Python',5);
 
-SELECT * FROM Course
-ORDER BY Credits DESC;
+SELECT * FROM Course ORDER BY Credits DESC;
